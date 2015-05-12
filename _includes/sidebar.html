@@ -1,0 +1,15 @@
+<aside class='sidebar'>
+<ul class='widget-sidebar'>
+<li class='widget widget_text'>
+<div class='textwidget'>
+XOYNQ.com is a collection of pet projects that will never, ever, be popular or make any real money, just like most of the Internet.
+</div>
+</li>
+<li class='widget widget_categories'>
+{% for page in site.html_pages %} 
+{% if page.title %}
+<li><a href='{{ page.url }}'>{{ page.title }}</a></li>
+{% endif %}
+{% endfor %}
+</ul>
+</aside>

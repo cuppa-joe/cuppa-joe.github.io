@@ -1,0 +1,127 @@
+body {
+    background: -webkit-linear-gradient(#FFF, #F4F4F4);
+    background: -o-linear-gradient(#FFF, #F4F4F4);
+    background: -moz-linear-gradient(#FFF, #F4F4F4);
+    background: linear-gradient(#FFF, #F4F4F4);
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+    display: block;
+}
+a {
+    color: #1E90FF;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
+}
+*,
+html {
+    line-height: 1.2em;
+}
+article img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+#wrapper {
+    font-size: 1em;
+    max-width: 90%;
+    margin: 0 auto;
+}
+header {
+    margin: 0;
+    float: left;
+    width: 100%;
+}
+header hgroup {
+    width: 100%;
+    font-weight: normal;
+}
+section.content {
+    width: 70%;
+    float: left;
+}
+.content article {
+    width: 100%;
+    float: left;
+    padding: 0 0 1em;
+    margin: 0 0 1em;
+    box-shadow: 2px 2px 1px #1E90FF;
+    border-right: 1px solid #1E90FF;
+    border-bottom: 1px solid #1E90FF;
+}
+article .entry {
+    clear: both;
+    padding: 0 0 1em;
+}
+.post-title {
+    font-size: 1.8em;
+    margin: 0;
+    padding: 0;
+    color: #1E90FF;
+}
+.entry.post-meta {
+    color: #999;
+}
+.entry.post-meta span {
+    padding: 0 1em 0 0;
+}
+.entry.post-content {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+aside.sidebar {
+    width: 25%;
+    float: right;
+}
+aside.sidebar ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+}
+aside.sidebar ul li {
+    width: 100%;
+    margin: 0 0 1em;
+    padding: 0;
+    float: left;
+    list-style: none;
+}
+footer {
+    width: 96%;
+    float: left;
+    padding: 1%;
+    background-color: white;
+    margin-top: 2em;
+}
+footer .footer-left {
+    width: 40%;
+    float: left;
+    text-align: left;
+}
+footer .footer-right {
+    width: 40%;
+    float: right;
+    text-align: right;
+}
