@@ -1,4 +1,8 @@
 <footer>
-<div class='footer-left'>&copy; Copyright 2015 XOYNQ.com</div>
-<div class='footer-right'><a href='mailto:xoynq@xoynq.com'>Contact Us</a></div>
+<div class='footer-left'>&copy; Copyright {{ site.time | date: "%Y" }} XOYNQ.com</div>
+<div class='footer-right'>
+{% for page in site.html_pages %} 
+{% if page.title %}<a href='{{ page.url }}'>{{ page.title }}</a>&nbsp;/&nbsp;{% endif %}
+{% endfor %}
+<a href='mailto:{{ site.contact }}'>Contact Us</a></div>
 </footer>

@@ -18,6 +18,14 @@ article,
 figure {
     display: block;
 }
+H1,
+H2,
+H3,
+H4,
+H5,
+H6 {
+    color: #1E90FF;
+}
 a {
     color: #1E90FF;
 }
@@ -46,6 +54,7 @@ article img {
     font-size: 1em;
     max-width: 90%;
     margin: 0 auto;
+    overflow: hidden;
 }
 header {
     margin: 0;
@@ -57,13 +66,13 @@ header hgroup {
     font-weight: normal;
 }
 section.content {
-    width: 70%;
+    width: 68%;
     float: left;
 }
 .content article {
     width: 100%;
     float: left;
-    padding: 0 0 1em;
+    padding: 0 0.5em 1em 0;
     margin: 0 0 1em;
     box-shadow: 2px 2px 1px #1E90FF;
     border-right: 1px solid #1E90FF;
@@ -91,22 +100,17 @@ article .entry {
     padding: 0;
 }
 aside.sidebar {
-    width: 25%;
+    width: 28%;
     float: right;
+    padding: 0 0.5em;
+    margin-bottom: -101%;
+    padding-bottom: 101%;
 }
-aside.sidebar ul {
-    width: 100%;
+blockquote {
     margin: 0;
-    padding: 0;
-    float: left;
-    list-style: none;
-}
-aside.sidebar ul li {
-    width: 100%;
-    margin: 0 0 1em;
-    padding: 0;
-    float: left;
-    list-style: none;
+    padding: 0 0 0 20px;
+    font-style: italic;
+    border-left: 4px solid #DDD;
 }
 footer {
     width: 96%;
@@ -116,12 +120,63 @@ footer {
     margin-top: 2em;
 }
 footer .footer-left {
-    width: 40%;
+    width: 24%;
     float: left;
     text-align: left;
 }
 footer .footer-right {
-    width: 40%;
+    width: 68%;
     float: right;
     text-align: right;
 }
+code,
+pre {
+    font-family: 'Droid Sans Mono', Terminal, monospace;
+    color: #000;
+    font-size: 14px;
+}
+code {
+    padding: 0.2em 0.2em;
+    margin: 0px;
+    font-size: 85%;
+    background-color: rgba(0, 0, 0, 0.04);
+    border-radius: 3px;
+}
+pre {
+    padding: 4px 12px;
+    background: #FDFEFB;
+    border-radius: 4px;
+    border: 1px solid #D7D8C8;
+    overflow: auto;
+    overflow-y: hidden;
+    margin-bottom: 32px;
+}
+table {
+    width: 100%;
+    border: 1px solid #ccc;
+    text-align: left;
+    border-collapse: collapse;
+    box-shadow: 2px 2px 1px #DDD;
+}
+th {
+    font-weight: bold;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+td {
+    padding: 10px;
+    border: #ccc 1px solid;
+}
+tr {
+    background: #FFFFFF;
+}
+tr:nth-child(odd) {
+    background: #FFFFFF;
+}
+tr:nth-child(even) {
+    background: #F3F3FF;
+}
+@media print,
+screen and (max-width: 960px) {} @media print,
+screen and (max-width: 720px) {} @media print,
+screen and (max-width: 480px) {}
